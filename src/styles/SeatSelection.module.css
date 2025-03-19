@@ -1,0 +1,200 @@
+.container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    border: solid 1px white;
+    border-radius: 5px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .header span {
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding-bottom: 4px;
+  }
+  
+  .selectedTime {
+    border-bottom: 2px solid blue;
+  }
+  
+  .legend {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .legend div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .legendBox {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+  }
+  
+  .selected {
+    background-color: #3b82f6; /* Azul */
+  }
+  
+  .available {
+    border: 2px solid #000;
+  }
+  
+  .occupied {
+    background-color: #b0b0b0;
+  }
+  
+  .screen {
+    background-color: #d1d5db;  
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .row-label {
+    font-weight: bold;
+    align-self: center;
+  }
+  
+  .seat {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .seat.occupied {
+    background-color: #b0b0b0;
+    cursor: not-allowed;
+  }
+  
+  .seat.selected {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .seat:hover:not(.occupied) {
+    background-color: #60a5fa;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los asientos */
+    margin-bottom: 10px; /* Separación entre filas */
+  }
+  
+  .seat {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: blue;
+  }
+  
+  .available {
+    background-color: gray;
+  }
+  
+  .occupied {
+    background-color: darkgray;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .buyButton {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .buyButton:hover {
+    background: #0056b3;
+  }
+
+  .nameInputContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .nameLabel {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .nameInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .legend {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .legendItem {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .legend .selected {
+    background-color: #007bff;
+  }
+  
+  .legend .available {
+    background-color: #eee;
+    border: 1px solid #ccc;
+  }
+  
+  .legend .occupied {
+    background-color: #dc3545;
+  }
+  
+  .warning {
+    color: orange;
+    margin-top: 10px;
+  }

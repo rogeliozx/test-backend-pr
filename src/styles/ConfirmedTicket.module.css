@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .confirmationCard {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .title {
+    color: #28a745; /* Verde para indicar éxito */
+    margin-bottom: 20px;
+  }
+  
+  .details {
+    margin-bottom: 25px;
+    text-align: left;
+  }
+  
+  .details p {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .total {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff; /* Azul para el total */
+    margin-top: 15px;
+  }
+  
+  .confirmationCode {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+  }
+  
+  .confirmationCode h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .code {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #dc3545; /* Rojo para destacar el código */
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .instruction {
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  .thankYou {
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  .thankYou p {
+    margin-bottom: 5px;
+  }

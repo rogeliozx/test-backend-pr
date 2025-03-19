@@ -1,0 +1,96 @@
+.container {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+    color: white;
+    padding: 40px;
+    gap: 30px;
+    border-radius: 10px;
+  }
+  
+  .poster {
+    width: 250px;
+    border-radius: 10px;
+  }
+  
+  .info {
+    flex: 1;
+  }
+  
+  .status {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .details {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .tag {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .meta {
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .buyButton {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .buyButton:hover {
+    background: #0056b3;
+  }
+  
+  .trailerButton {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .trailerButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .synopsisTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .synopsis {
+    font-size: 16px;
+    color: #ddd;
+  }
