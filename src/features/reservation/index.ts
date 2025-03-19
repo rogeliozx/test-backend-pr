@@ -5,7 +5,7 @@ import axios from "axios";
 const API_URL = "http://localhost:3000/reservations";
 const createReservation = async (postData: any): Promise<any> => {
     console.log("creando Post")
-  const response = await axios.post(`${API_URL}`, postData);
+  const response = await axios.post(`${process.env.REACT_APP_API_URL}/reservations`, postData);
   return response.data;
 };
 

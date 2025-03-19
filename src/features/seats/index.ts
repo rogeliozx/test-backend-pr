@@ -5,9 +5,8 @@ import { Seat } from '../../types';
 
 const fetchSeats = async (hallId:string,scheduleId:string):Promise<Seat[]> => {
     console.log(hallId,scheduleId)
-    const API_URL = 'http://localhost:3000/seats';
     
-    const response = await axios.get(API_URL,{
+    const response = await axios.get(`${process.env.REACT_APP_API_URL}/seats`,{
         params:{
             hallId,
             scheduleId

@@ -6,13 +6,13 @@ const API_URL = 'http://localhost:3000/movies'; // Cambia por tu endpoint real
 
 const fetchMovies = async ():Promise<Movies[]> => {
     
-  const response = await axios.get(API_URL);
+  const response = await axios.get(`${process.env.REACT_APP_API_URL}/movies`);
   return response.data;
 };
 
 const fetchMovie = async (id:string):Promise<Movies> => {
     
-  const response = await axios.get(`${API_URL}/${id}`);
+  const response = await axios.get(`${process.env.REACT_APP_API_URL}/movies/${id}`);
   return response.data;
 };
 
